@@ -1,0 +1,14 @@
+// .devcontainer/devcontainer.json
+{
+    "name": "TEMPLATE-DEV-CONTAINER Dev Container",
+    "dockerComp`oseFile": "../docker-compose.yml",
+    "service": "dev",
+    "workspaceFolder": "/TEMPLATE-DEV-CONTAINER",
+    "extensions": [
+        "ms-vscode.cpptools", // C++ tools extension
+        "ms-vscode.cmake-tools" // CMake tools extension
+    ],
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    }
+}

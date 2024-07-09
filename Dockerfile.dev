@@ -1,0 +1,11 @@
+# Dockerfile.dev
+FROM alpine:latest
+
+# Install dependencies
+RUN apk add --no-cache build-base cmake gdb valgrind vim
+
+# Copy source code
+COPY . /TEMPLATE-DEV-CONTAINER
+
+# Set working directory
+WORKDIR /TEMPLATE-DEV-CONTAINER
